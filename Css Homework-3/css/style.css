@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+
+.about,.store,.gmail,.images,.att,.sign{
+    padding: 0.5rem;
+    
+    
+}
+
+.gmail,.images,.sign{
+    vertical-align: top;
+}
+
+.att{
+    position: relative;
+    bottom: 0.5rem;
+    opacity: 0.5;
+}
+.sign{
+    background-color: rgb(15, 117, 250);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+.sign:hover{
+    background-color:rgb(89, 160, 253) ;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.25rem;
+    padding: 0 1rem;
+    font-size: 13px;
+    
+    
+}
+a{
+    text-decoration: none;
+    color: rgb(78, 82, 87);
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:hover{
+    text-decoration: underline;
+}
+.signin:hover{
+    text-decoration: none;
+    
+}
+
+#logo img{
+    display: block;
+    margin:  auto;
+    
+}
+.icon{
+    margin-top: 7rem;
+}
+
+#search{
+    width: 36rem;
+    position: relative;
+    top: 2.5rem;
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+    border: 1px solid white;
+    
+    padding: 0.22rem 0;
+    border-radius: 25px;
+    box-shadow: 1px 1px 3px 2px  rgba(193, 199, 193,1);
+}
+#search input{
+    
+    border: none;
+    text-align: left;
+    padding: 0.5rem 0;
+    width: 80%;
+    font-size: 1rem;
+}
+.sglass{
+    position: relative;
+    right: 0.8rem;
+
+    width: 2rem;
+}
+.mic{
+    position: relative;
+    top: 0.4rem;
+    width: 0.8rem;
+}
+
+.box1{
+    flex: 1;
+}
+.box2{
+    flex: 6;
+}
+.box3{
+    flex: 1;
+}
+
+#search input:focus{
+    outline: none;
+}
+
+#path a >div{
+    width: 7em;
+    height: 6em;
+  
+    
+    
+    
+
+}
+#path > a{
+    text-decoration: none;
+    width: 100%;
+    color: black;
+    display: block;
+    
+
+    
+}
+
+#path a:hover{
+    background-color: rgb(230, 227, 227);
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+#path{
+    padding-top: 4rem;
+    
+    margin: auto;
+    
+    width: 36rem;
+    display: grid;
+    grid-template:6rem / 1fr 1fr 1fr 1fr 1fr;
+    
+   
+    
+}
+.jar{
+    background-color: rgba(241, 243, 244, 1);
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem auto 0 auto;
+    border-radius: 2rem;
+
+}
+.path1 img,.path2 img,.path4 img,.path6 img,.path7 img,.path8 img,.path9 img,.path10 img{
+    width: 1.5rem;
+    display: block;
+    padding-top: 0.6rem;
+    margin: auto;
+    
+}
+.path3 img,.path5 img{
+    width: 1.7rem;
+    display: block;
+    padding-top: 0.8rem;
+    margin: auto;
+}
+
+.site{
+    width: 100%;
+    font-size: 0.8rem;
+    opacity: 0.9;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding-top: 1rem;
+    
+    
+}
+
+@media screen and (max-width:576px){
+    
+    
+    
+    
+    
+    
+    #path{
+        padding-top: 4rem;    
+        width: 24rem;
+        display: grid;
+        grid-template:6rem / 1fr 1fr 1fr ; 
+    }
+
+    .path7,.path8, .path9, .path10{
+        display: none;
+    }
+    #search{
+        width: 20rem;
+       
+    }
+    .box2{
+        flex: 3;
+    }
+}
+
+
+@media screen and (min-width:577px) and (max-width:650px){
+    #path{
+        padding-top: 4rem;    
+        width: 30rem;
+        display: grid;
+        grid-template:6rem / 1fr 1fr 1fr 1fr; 
+    }
+    .path9, .path10{
+        display: none;
+    }
+
+    #search{
+        width: 28rem;
+       
+    }
+    .box2{
+        flex: 4;
+    }
+}
